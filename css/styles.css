@@ -1,0 +1,212 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background: #f7f5f0;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
+}
+header{
+  margin: 50px 0;
+}
+.portfolio .card:nth-child(even){
+  background-color: #ededf2;
+}
+.portfolio .card:nth-child(odd){
+  color: #040487;
+}
+.main-nav ul,
+.skills-list ul{
+  list-style-type: none;
+  padding: 0;
+}
+.skills li{
+/*  display: inline-block;*/
+  padding: 10px 25px;
+  background-color: #ededf2;
+  margin-bottom: 5px;
+}
+.card{
+  padding-top: 15px;
+}
+.card p{
+  padding: 0 40px;
+}
+.card:nth-child(even){
+  padding-bottom: 1px;
+}
+.nav{
+  color: #2e2e30;
+  display: block;
+}
+
+.nav .name{
+  display: block;
+  margin:15px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.nav a{
+  text-decoration: none;
+  color: #2e2e30;
+  font-weight: bold;
+  padding: 15px 0;
+  display: block;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.profile-image{
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+}
+.portfolio-image{
+  width: 90%;
+  height: 90%;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 90%;
+}
+.footer-container footer{
+  display: flex;
+}
+.footer-name{
+  margin-right: auto;
+}
+.portfolio{
+  background-color: #FFF;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+.portfolio>h2{
+  padding-bottom: 60px;
+}
+.contact h2{
+  padding: 40px 0;
+}
+.infodetails{
+  padding-bottom: 45px;
+}
+.infodetails div{
+  padding: 10px 0;
+}
+.infodetails span{
+  font-weight: bold;
+}
+footer .nav{
+  display: none;
+}
+#backtotop{
+  text-decoration: none;
+  color: #2e2e30;
+}
+
+/*tablet*/
+@media screen and (min-width:768px) {
+  body{
+    font-family: 'Dancing Script', cursive;
+  }
+  .nav li{
+    display: inline-block;
+  }
+  .nav a{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+  }
+  .col{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-right: -4px;
+  }
+  .personal-image{
+    float: right;
+    padding: 50px 20px;
+  }
+  .personal-info{
+    width: 50%;
+    text-align: left;
+    padding-top: 20px;
+  }
+  header{
+    padding-bottom: 150px;
+  }
+  .personal-info p{
+    padding-top: 20px;
+  }
+  .skills li{
+    display: inline;
+    padding: 10px 40px;
+}
+  .contact> p{
+    width: 60%;
+    margin: 30px 20%;
+  }
+  #backtotop{
+    display: none;
+  }
+  footer .nav{
+    display: inline-block;;
+  }
+  footer .nav a{
+    padding: 15px 15px;
+  }
+  footer .nav a:last-child{
+    padding-right: 0;
+  }
+  .footer-name{
+    padding-top: 10px;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width:1024px) {
+  body{
+    font-family: 'Hind Siliguri', sans-serif;
+  }
+  .flex{
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: block;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .personal-image,
+  .personal-info{
+    width: 50%;
+  }
+  .main-section{
+    clear: both;
+  }
+  .contact> p{
+    width: 40%;
+    margin: 30px 33%;
+  }
+  .col{
+    width: 33%;
+  }
+}
+
+
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
